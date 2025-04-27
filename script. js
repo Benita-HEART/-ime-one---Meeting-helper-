@@ -1,4 +1,4 @@
-function calculateTimeDifference() {
+const timeZones = Intl.supportedValuesOf('timeZone');function calculateTimeDifference() {
     // Get the cities selected by the user
     let city1 = document.getElementById('city1').value;
     let city2 = document.getElementById('city2').value;
