@@ -1,3 +1,4 @@
+const timeZones = Intl.supportedValuesOf('timeZone');
 const timeZoneSelect = document.getElementById('timeZoneSelect');
 timeZones.forEach(zone => {
   const option = document.createElement('option');   // creates a new <option> element
