@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Meeting Helper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Zone Meeting Helper</h1>
+        
+        <!-- Form to select cities -->
+        <label for="city1">Select your city:</label>
+        <select id="city1">
+            <option value="Africa/Lagos">Lagos</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <!-- Add more cities here -->
+        </select>
+        
+        <label for="city2">Select client's city:</label>
+        <select id="city2">
+            <option value="Africa/Lagos">Lagos</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <!-- Add more cities here -->
+        </select>
+        
+        <!-- Button to calculate time difference -->
+        <button onclick="calculateTimeDifference()">Check Time Difference</button>
+
+        <!-- Area to display the results -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
