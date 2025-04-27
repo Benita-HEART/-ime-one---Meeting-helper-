@@ -1,4 +1,10 @@
-const timeZones = Intl.supportedValuesOf('timeZone');function calculateTimeDifference() {
+const timeZoneSelect = document.getElementById('timeZoneSelect');
+timeZones.forEach(zone => {
+  const option = document.createElement('option');   // creates a new <option> element
+  option.value = zone;                               // sets the value to the time zone name
+  option.textContent = zone.replace('_', ' ').replace('/', ' / '); // makes it look a bit cleaner
+  timeZoneSelect.appendChild(option);                // adds this option to the dropdown
+});
     // Get the cities selected by the user
     let city1 = document.getElementById('city1').value;
     let city2 = document.getElementById('city2').value;
